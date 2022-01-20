@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import MainApi from './API/api';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <MainApi>
+      <App />
+    </MainApi>
   </React.StrictMode>,
   document.getElementById('root')
 );
